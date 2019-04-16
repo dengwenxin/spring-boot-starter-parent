@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.dwx.commons</groupId>
+        <artifactId>dwx-spring-boot-dependencies</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.dwx.commons</groupId>
+    <artifactId>dwx-spring-boot-starter-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>${project.artifactId}</name>
+    <description>dwx spring-boot项目的parent pom.xml所有的spring-boot应用都继承该pom.xml</description>
+    <url>http://www.dwxii.com</url>
+
+    <properties>
+        <dwx-commons-redis.version>1.0-SNAPSHOT</dwx-commons-redis.version>
+        <dwx-scheduler-admin-core.version>1.0-SNAPSHOT</dwx-scheduler-admin-core.version>
+        <dwx-commons.version>1.0-SNAPSHOT</dwx-commons.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--这里封装一些公司级别的 公共的项目，比如jwt-->
+<!--            <dependency>-->
+<!--                <groupId>com.dwx.commons</groupId>-->
+<!--                <artifactId>dwx-scheduler-admin-core</artifactId>-->
+<!--                <version>${dwx-job-core.version}</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>com.dwx.commons</groupId>-->
+<!--                <artifactId>dwx-commons-redis</artifactId>-->
+<!--                <version>${dwx-commons-redis.version}</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>com.dwx.commons</groupId>-->
+<!--                <artifactId>dwx-commons</artifactId>-->
+<!--                <version>${dwx-commons.version}</version>-->
+<!--            </dependency>-->
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>
